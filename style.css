@@ -163,7 +163,6 @@ input[type="text"]::placeholder {
 }
 
 /* --- PLAYLIST GRID --- */
-/* --- PLAYLIST GRID --- */
 .grid {
     display: grid;
     /* Desktop: 2 cards per row */
