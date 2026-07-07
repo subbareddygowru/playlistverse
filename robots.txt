@@ -4,5 +4,3 @@ Allow: /
 
 Sitemap: https://playlistverse.in/sitemap.xml
 
-Disallow: /admin/
-Disallow: /api/
