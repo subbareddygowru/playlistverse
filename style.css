@@ -287,3 +287,30 @@ input[type="text"]::placeholder {
         text-align: center;
     }
 }
+
+/* 1. Set up the body to push the footer down */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Takes full height of the viewport */
+    margin: 0;
+    background-color: #121212; /* Matches your dark theme */
+    color: #ffffff;
+}
+
+/* 2. Allow the main section to grow and take up empty space */
+main, .directory-container, .artist-page-container {
+    flex: 1; 
+}
+
+/* 3. Style and center the footer */
+footer {
+    text-align: center;
+    padding: 24px 16px;
+    background-color: #000000; /* Distinct dark footer background */
+    color: #b3b3b3;            /* Clean muted text color */
+    font-size: 0.9rem;
+    border-top: 1px solid #282828;
+    width: 100%;
+    box-sizing: border-box;
+}
