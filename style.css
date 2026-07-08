@@ -504,3 +504,154 @@ footer {
 
 }
 
+
+/* COMMUNITY SECTION */
+.community-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 50px;
+    background: #181818;
+    border: 1px solid #2b2b2b;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.community-section h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.community-subtitle {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    color: #b3b3b3;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Statistics */
+
+.community-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.community-card {
+    background: #242424;
+    border-radius: 18px;
+    padding: 35px 25px;
+    transition: .3s;
+}
+
+.community-card:hover {
+    transform: translateY(-6px);
+    border: 1px solid #1DB954;
+}
+
+.stat-number {
+    color: #1DB954;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.stat-icon {
+    font-size: 42px;
+    color: #1DB954;
+    margin: 15px 0;
+}
+
+.stat-title {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+
+.follow-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.platform-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 260px;
+    height: 60px;
+
+    background: #1DB954;
+    color: #fff;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+
+    transition: .3s;
+}
+
+.platform-btn i {
+    font-size: 24px;
+}
+
+.platform-btn:hover {
+    transform: translateY(-4px);
+    background: #1ed760;
+}
+
+.platform-btn img {
+    width: 28px;
+    height: 28px;
+}
+
+.spotify {
+    background: #1DB954;
+}
+
+.amazon {
+    background: #00A8E1;
+}
+
+.youtube {
+    background: #FF0000;
+}
+
+.spotify:hover {
+    background: #1ed760;
+}
+
+.amazon:hover {
+    background: #12b7ee;
+}
+
+.youtube:hover {
+    background: #ff1a1a;
+}
+
+/* Responsive */
+
+@media(max-width:900px) {
+
+    .community-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .follow-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .platform-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
+}
+
