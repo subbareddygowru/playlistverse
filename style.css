@@ -1505,3 +1505,87 @@ main,
     }
 
 }
+/* ==========================
+   LEGAL PAGES
+========================== */
+
+.legal-container{
+    max-width:900px;
+    margin:40px auto 60px;
+    padding:0 20px;
+}
+
+.legal-card{
+    background:#181818;
+    border:1px solid #2a2a2a;
+    border-radius:18px;
+    padding:40px;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.legal-card h1{
+    color:#fff;
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.legal-card h2{
+    color:#1DB954;
+    font-size:1.4rem;
+    margin-top:35px;
+    margin-bottom:12px;
+}
+
+.legal-card p,
+.legal-card li{
+    color:#b3b3b3;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.legal-card ul{
+    margin-left:22px;
+    margin-bottom:20px;
+}
+
+.legal-card strong{
+    color:#fff;
+}
+
+.legal-card a{
+    color:#1DB954;
+    text-decoration:none;
+}
+
+.legal-card a:hover{
+    text-decoration:underline;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .legal-container{
+        width:95%;
+        margin:20px auto 40px;
+        padding:0;
+    }
+
+    .legal-card{
+        padding:25px;
+        border-radius:14px;
+    }
+
+    .legal-card h1{
+        font-size:2rem;
+    }
+
+    .legal-card h2{
+        font-size:1.25rem;
+    }
+
+    .legal-card p,
+    .legal-card li{
+        font-size:1rem;
+    }
+}
