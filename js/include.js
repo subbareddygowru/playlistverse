@@ -1,9 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function ()
+{
 
     // Load Header
     fetch("/includes/header.html")
         .then(response => response.text())
-        .then(data => {
+        .then(data =>
+        {
 
             document.getElementById("header").innerHTML = data;
 
@@ -12,13 +14,16 @@ document.addEventListener("DOMContentLoaded", function () {
             const close = document.getElementById("close-menu");
             const nav = document.getElementById("nav-links");
 
-            if (menu && close && nav) {
+            if (menu && close && nav)
+            {
 
-                menu.addEventListener("click", () => {
+                menu.addEventListener("click", () =>
+                {
                     nav.classList.add("active");
                 });
 
-                close.addEventListener("click", () => {
+                close.addEventListener("click", () =>
+                {
                     nav.classList.remove("active");
                 });
 
@@ -29,8 +34,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Load Footer
     fetch("/includes/footer.html")
         .then(response => response.text())
-        .then(data => {
+        .then(data =>
+        {
             document.getElementById("footer").innerHTML = data;
         });
+
+    // Telugu Explore Section
+    fetch("/includes/explore-telugu.html")
+        .then(response => response.text())
+        .then(data =>
+        {
+            const explore = document.getElementById("explore-telugu");
+            if (explore) explore.innerHTML = data;
+        });
+
 
 });
